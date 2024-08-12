@@ -23,7 +23,7 @@ export default function Home() {
         <button>Encutar link</button>
       </div>
 
-      <Menu />
+    <Menu />
 
     </div>
   );
