@@ -7,7 +7,7 @@ export default function Menu() {
         <a className='social' href='https://youtube.com.br'>
           <BsYoutube color='#fafafa' size={24} />
         </a>
-        <a className='social' href='https://instagram.com.br'>
+        <a className='social' href='https://instagram.com'>
           <BsInstagram color='#fafafa' size={24} />
         </a>
             
