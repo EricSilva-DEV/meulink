@@ -1,9 +1,10 @@
 import './link-item.css';
 import { FiX, FiClipboard } from 'react-icons/fi';
 
-export default function LinkItem({closeModal}) {
+export default function LinkItem({closeModal, content}) {
     return (
         <div className='modal-container'>
+           
             <div className="modal-header">
                 <h1>Link Encurtado</h1>
                 <button onClick={closeModal}>
@@ -12,11 +13,11 @@ export default function LinkItem({closeModal}) {
             </div>
 
             <span>
-                https://www.meusite.com.br
+                {content.long_url}
             </span>
 
             <button className='modal-link'>
-                https://bit.ly/12900
+                {content.link}
                 <FiClipboard size={18} color="#fafafa" />
             </button>
         </div>
