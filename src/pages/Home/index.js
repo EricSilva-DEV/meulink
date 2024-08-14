@@ -5,7 +5,7 @@ import "./home.css";
 import Menu from '../components/Menu'
 import LinkItem from '../components/LinkItem';
 
-import api from '../services/api';
+import api from '../../services/api';
 
 export default function Home() {
   const [link, setLink] = useState('');
@@ -20,7 +20,8 @@ export default function Home() {
 
       setData(response.data);
       setShowModal(true);
-      setLink('');
+      
+      setLink('')
 
       }catch{
         alert("Ops parece que algo deu errado!");
@@ -50,11 +51,13 @@ export default function Home() {
       </div>
 
       <Menu />
-      {showModal &&
-        (<LinkItem
-        closeModal={() => setShowModal(false)}
+
+      {showModal && (
+        <LinkItem
+        closeModal={ () => setShowModal(false) }
         content={data}
-        />)}
+        />
+      )}
     </div>
-  );
+  )
 }
