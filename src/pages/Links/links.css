@@ -58,6 +58,13 @@
     border: none;
 }
 
+.empt-text{
+    width: 100%;
+    text-align: center;
+    margin-top: 24px;
+    font-weight: 100;
+}
+
 
 @media (max-width: 720px){
 
